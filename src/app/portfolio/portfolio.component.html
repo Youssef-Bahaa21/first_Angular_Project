@@ -1,0 +1,30 @@
+<section id="portfolio" class="text-uppercase py-3 container">
+  <div class="text-center">
+    <h1 class="fw-bold">portfolio component</h1>
+    <app-star [starColor]="'black'"></app-star>
+  </div>
+  <div class="row g-3 mt-3">
+    @for (item of arrImges; track $index) {
+    <div class="col-md-6 col-lg-4">
+      <div
+        class="inner rounded-3 overflow-hidden position-relative"
+        (click)="modalImg = item.img; modalview = false"
+      >
+        <img [src]="item.img" alt="" class="w-100" />
+        <div
+          class="layer position-absolute d-flex justify-content-center fa-5x align-items-center"
+        >
+          <i class="fa-solid fa-plus text-white"></i>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</section>
+<div
+  class="my-modal position-fixed top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center"
+  [class.d-none]="modalview"
+  (click)="showModal($event, img)"
+>
+  <img #img [src]="modalImg" alt="" class="w-50" />
+</div>

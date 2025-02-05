@@ -1,0 +1,6 @@
+.top-400 {
+  top: 400px;
+}
+.name label {
+  transition: all 0.5s;
+}

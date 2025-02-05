@@ -1,0 +1,75 @@
+<section id="contact" class="container py-3">
+  <div class="text-center">
+    <h1 class="fa-3x fw-bold text-uppercase">conatct section</h1>
+    <app-star [starColor]="'black'"></app-star>
+  </div>
+  <div class="form mt-5 w-50 mx-auto">
+    <div class="name overflow-hidden">
+      <label
+        for="userName"
+        class="position-relative top-400"
+        [class.top-0]="username.length > 0"
+        >userName:</label
+      >
+      <input
+        placeholder="userEmail"
+        type="text"
+        name=""
+        id=""
+        class="form-control border-top-0 border-start-0 border-end-0"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="name overflow-hidden">
+      <label
+        for="userAge"
+        class="position-relative top-400"
+        [class.top-0]="userAge.length > 0"
+        >userAge:</label
+      >
+      <input
+        placeholder="userAge"
+        type="text"
+        name=""
+        id=""
+        class="form-control border-top-0 border-start-0 border-end-0"
+        [(ngModel)]="userAge"
+      />
+    </div>
+    <div class="name overflow-hidden">
+      <label
+        for="userEmail"
+        class="position-relative top-400"
+        [class.top-0]="userEmail.length > 0"
+        >userEmail:</label
+      >
+      <input
+        placeholder="userEmail"
+        type="text"
+        name=""
+        id=""
+        class="form-control border-top-0 border-start-0 border-end-0"
+        [(ngModel)]="userEmail"
+      />
+    </div>
+    <div class="name overflow-hidden">
+      <label
+        for="userPassword"
+        class="position-relative top-400"
+        [class.top-0]="userPassword.length > 0"
+        >userPassword:</label
+      >
+      <input
+        placeholder="userPassword"
+        type="text"
+        name=""
+        id=""
+        class="form-control border-top-0 border-start-0 border-end-0"
+        [(ngModel)]="userPassword"
+      />
+    </div>
+    <button class="bg-second text-white rounded-3 p-2 mb-3 border-0 mt-3">
+      send Message
+    </button>
+  </div>
+</section>
